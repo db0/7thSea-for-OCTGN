@@ -10,7 +10,7 @@ Linkage
 
 Unfortunately there's not much of a community remaining around the 7th Sea CCG. The best I can find is the [Gone but not Forgotten](http://www.alderac.com/forum/viewforum.php?f=264) forum of AEG and then your second best option to find other people interested in the game is the [Board Game Geek page](http://boardgamegeek.com/boardgame/3125/7th-sea-collectible-card-game). Hopefully, now that the game is playable on OCTGN, we might be able to rejuvenate the community. So please **do** speak up if you're around ;)
 
-Chngelog
+Changelog
 --------
 
 ### 0.1.2
