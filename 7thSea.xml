@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <game name="7th Sea CCG" id="844ed56c-2048-41a6-97b0-3515185e1634" 
-      octgnVersion="0.10.0.0" version="0.1.2"
+      octgnVersion="0.10.0.0" version="1.0.0"
       markersize="16"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Game.xsd">
 
@@ -23,7 +23,7 @@
 	<property name="Adventuring" type="String" />
 	<property name="Influence" type="String" />
 	<property name="Swashbuckling" type="String" />
-	<property name="Crew Max." type="String" />
+	<property name="Crew Max" type="String" />
 	<property name="Move Cost" type="String" />
 	<property name="Faction" type="String" textKind="Enum" />
    <property name="Rarity" type="String" ignoreText="true" textKind="Enum" />
