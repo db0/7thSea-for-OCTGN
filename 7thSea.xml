@@ -70,7 +70,7 @@
   </shared>
   
   <deck>
-		<section name="Ship &amp; Captain" group="Hand" />		
+		<section name="Ship, Captain &amp; Starting Crew" group="Hand" />
 		<section name="Deck" group="Deck" />
   </deck>
   
