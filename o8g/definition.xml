@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<game name="7th Sea CCG" 
+<game name="7th Sea" 
       id="844ed56c-2048-41a6-97b0-3515185e1634" 
       octgnVersion="0.10.0.0" 
       version="1.0.1"
       markersize="16"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-      xsi:noNamespaceSchemaLocation="Game.xsd"
-      tags="pirates rennaisance "
-      description="7th Sea CCG"
-      setsurl="http://octgn.gamersjudgement.com/viewtopic.php?f=9&amp;t=14"
-      gameurl="https://github.com/db0/Doomtown-for-OCTGN"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+      tags="pirates rennaisance"
+      description="In the 7th Sea CCG, players take the role of naval captains in the fantasy-Restoration world of Théah.&#xd;&#xd;&#xd;The game attempts to capture the feeling of a Hollywood pirate battle, complete with huge galleys, cannon-shot exchanges, and daring sea boardings. The game also has aspects of adventuring, treasure seeking, and the occult.&#xd;&#xd;Automation rank: D&#xd;(This game definition contains no automation.)"
+      setsurl="http://http://octgn.gamersjudgement.com/viewtopic.php?f=29&amp;t=24"
+      gameurl="https://github.com/db0/7thSea-for-OCTGN"
       authors="Db0"
-      iconurl="https://raw.github.com/db0/Doomtown-for-OCTGN/master/doomtown_logo.jpg">
+      iconurl="https://raw.github.com/db0/7thSea-for-OCTGN/master/7thSea_logo2.jpg">
   <scripts>
 	<script src="Scripts/actions.py" />
   </scripts>  
+   <proxygen definitionsrc="Proxy/proxydef.xml">
+   </proxygen>   
   <card back="Card/cardback.jpg" front="Card/cardback.jpg" width="90" height="126" cornerRadius="6">
 	<property name="Type" type="String" textKind="Enum" />
 	<property name="Cost" type="String" />
@@ -32,12 +34,12 @@
 	<property name="Crew Max" type="String" />
 	<property name="Move Cost" type="String" />
 	<property name="Faction" type="String" textKind="Enum" />
-   <property name="Rarity" type="String" ignoreText="true" textKind="Enum" />
+   <property name="Rarity" type="String" ignoreText="True" textKind="Enum" />
 	<property name="Text" type="String" />
   </card>
 
-  <table name="Table" visibility="undefined" ordered="false" width="1150" height="750" background="Background/Theah_background.jpg" backgroundStyle="uniformToFill">
-    <cardaction menu="Tack/Untack" execute="tack" default="true" />
+  <table name="Table" visibility="undefined" ordered="False" width="1150" height="750" background="Background/Theah_background.jpg" backgroundStyle="uniformToFill">
+    <cardaction menu="Tack/Untack" execute="tack" default="True" />
     <cardaction menu="Inspect Card" execute="inspectCard" />	
     <groupaction menu="Announce Pass." execute="Pass" shortcut="Ctrl+Space"/>  
     <cardaction menu="Sink card(s)" batchExecute="sink" shortcut="Del" />	
@@ -45,8 +47,8 @@
   </table>
 
   <player>
-    <hand name="Hand" visibility="me" ordered="false" width="90" height="126" icon="Groups/hand.png">
-      <cardaction menu="Play" execute="playcard" default="true"/>	
+    <hand name="Hand" visibility="me" ordered="False" width="90" height="126" icon="Groups/hand.png">
+      <cardaction menu="Play" execute="playcard" default="True"/>	
       <cardaction menu="Inspect Card" execute="inspectCard" />      
       <cardaction menu="Discard card" execute="handDiscard" />		
       <groupaction menu="Random Discard" shortcut="Ctrl+Alt+D" execute="randomDiscard" />
@@ -54,7 +56,7 @@
     </hand>
 	
     <group name="Deck" visibility="none" width="90" height="126" icon="Groups/deck.png">
-      <groupaction menu="Draw" default="true" execute="draw" shortcut="Ctrl+D"/>
+      <groupaction menu="Draw" default="True" execute="draw" shortcut="Ctrl+D"/>
       <groupaction menu="Draw cards to Play Hand" execute="drawMany" />
       <groupaction menu="Shuffle" execute="shuffle" />
     </group>
@@ -70,7 +72,7 @@
   </player>
 
   <shared>
-     <counter name="Phase" default="0" />  
+     <counter name="Phase" default="0" icon="Counters/phases.png" />  
      <group name="Common" visibility="all" width="90" height="126" icon="Groups/hand.png"/>
      <group name="Removed from Play" visibility="all" width="90" height="126" icon="Groups/removed.png"/>
   </shared>
