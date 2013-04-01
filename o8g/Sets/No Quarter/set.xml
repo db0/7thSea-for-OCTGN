@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="No Quarter" id="45dbb877-8b83-4db0-83d0-ee8ec2ca9c1a" gameId="844ed56c-2048-41a6-97b0-3515185e1634" version="1.0" gameVersion="1.0.0">
+	<cards>
+		<card id="348009f2-67ed-4997-95f0-74c778f5d75d" name="Charter">
+			<property name="Type" value="Attachments" />
+			<property name="Cost" value="" />
+			<property name="Cost Type" value="" />
+			<property name="Cancel" value="" />
+			<property name="Cancel Type" value="" />
+			<property name="Wealth" value="" />
+			<property name="Attack" value="" />
+			<property name="Parry" value="" />
+			<property name="Cannon" value="" />
+			<property name="Sailing" value="" />
+			<property name="Adventuring" value="" />
+			<property name="Influence" value="" />
+			<property name="Swashbuckling" value="" />
+			<property name="Crew Max" value="" />
+			<property name="Move Cost" value="" />
+			<property name="Faction" value="" />
+			<property name="Rarity" value="F" />
+			<property name="Text" value="Explorer Captain Attachment • Unique • Letter of Marque.  You may not put this card into play unless you have 3 completed Adventures in play. All completed Adventures you have in play that provide skill bonuses give an additional +1 to the appropriate Skill." />
+		</card>
+		<card id="edae58d9-8c5c-4ea6-b0ce-a51b6911221b" name="Constitution">
+			<property name="Type" value="attachments" />
+			<property name="Cost" value="" />
+			<property name="Cost Type" value="" />
+			<property name="Cancel" value="" />
+			<property name="Cancel Type" value="" />
+			<property name="Wealth" value="" />
+			<property name="Attack" value="" />
+			<property name="Parry" value="" />
+			<property name="Cannon" value="" />
+			<property name="Sailing" value="" />
+			<property name="Adventuring" value="" />
+			<property name="Influence" value="" />
+			<property name="Swashbuckling" value="" />
+			<property name="Crew Max" value="" />
+			<property name="Move Cost" value="" />
+			<property name="Faction" value="" />
+			<property name="Rarity" value="F" />
+			<property name="Text" value="Brotherhood Captain Attachment • Unique • Letter of Marque. You must tack two of your Brotherhood Crew to put this card into play. &#xA;React: Tack the Constitution when you are paying an Influence cost for hiring a Brotherhood Crew to produce 2 Influence." />
+		</card>
+		<card id="54e5f502-b305-404d-994b-98cbe682628c" name="Letter of Marque">
+			<property name="Type" value="attachments" />
+			<property name="Cost" value="" />
+			<property name="Cost Type" value="" />
+			<property name="Cancel" value="" />
+			<property name="Cancel Type" value="" />
+			<property name="Wealth" value="" />
+			<property name="Attack" value="" />
+			<property name="Parry" value="" />
+			<property name="Cannon" value="" />
+			<property name="Sailing" value="" />
+			<property name="Adventuring" value="" />
+			<property name="Influence" value="" />
+			<property name="Swashbuckling" value="" />
+			<property name="Crew Max" value="" />
+			<property name="Move Cost" value="" />
+			<property name="Faction" value="" />
+			<property name="Rarity" value="F" />
+			<property name="Text" value="Sea Dog Captain Attachment • Unique • Letter of Marque. You must discard two cards from your hand to put this card in play.&#xA;Act: Tack the Letter of Marque to draw a card." />
+		</card>
+		<card id="d94a0b26-19e4-4ef3-b29b-eddea917aec1" name="Naval Sanction">
+			<property name="Type" value="attachments" />
+			<property name="Cost" value="" />
+			<property name="Cost Type" value="" />
+			<property name="Cancel" value="" />
+			<property name="Cancel Type" value="" />
+			<property name="Wealth" value="" />
+			<property name="Attack" value="" />
+			<property name="Parry" value="" />
+			<property name="Cannon" value="" />
+			<property name="Sailing" value="" />
+			<property name="Adventuring" value="" />
+			<property name="Influence" value="" />
+			<property name="Swashbuckling" value="" />
+			<property name="Crew Max" value="" />
+			<property name="Move Cost" value="" />
+			<property name="Faction" value="" />
+			<property name="Rarity" value="F" />
+			<property name="Text" value="Castille Captain Attachment • Unique • Letter of Marque. You may not put this card into play unless you have started one or more Boardings this game.&#xA;While Naval Sanction is in play, your Crew each inflict 1 extra Hit during Boarding Attacks." />
+		</card>
+		<card id="2b527109-0332-4f71-8a13-8e3c9359112a" name="Seal of the Sun King">
+			<property name="Type" value="attachments" />
+			<property name="Cost" value="" />
+			<property name="Cost Type" value="" />
+			<property name="Cancel" value="" />
+			<property name="Cancel Type" value="" />
+			<property name="Wealth" value="" />
+			<property name="Attack" value="" />
+			<property name="Parry" value="" />
+			<property name="Cannon" value="" />
+			<property name="Sailing" value="" />
+			<property name="Adventuring" value="" />
+			<property name="Influence" value="" />
+			<property name="Swashbuckling" value="" />
+			<property name="Crew Max" value="" />
+			<property name="Move Cost" value="" />
+			<property name="Faction" value="" />
+			<property name="Rarity" value="F" />
+			<property name="Text" value="Montaigne Captain Attachment • Unique • Letter of Marque. You may not put this card into play if any other player has more Influence than you.&#xA;Act: Tack the Seal and target any one Ship in Frothing Sea. You inflict 3 Hits on that Ship." />
+		</card>
+		<card id="52283edd-dca4-4637-8246-4c0a8a03daa5" name="The Pact of the Crimson Rogers">
+			<property name="Type" value="attachments" />
+			<property name="Cost" value="" />
+			<property name="Cost Type" value="" />
+			<property name="Cancel" value="" />
+			<property name="Cancel Type" value="" />
+			<property name="Wealth" value="" />
+			<property name="Attack" value="" />
+			<property name="Parry" value="" />
+			<property name="Cannon" value="" />
+			<property name="Sailing" value="" />
+			<property name="Adventuring" value="" />
+			<property name="Influence" value="" />
+			<property name="Swashbuckling" value="" />
+			<property name="Crew Max" value="" />
+			<property name="Move Cost" value="" />
+			<property name="Faction" value="" />
+			<property name="Rarity" value="F" />
+			<property name="Text" value="Crimson Rogers Captain Attachment • Unique • Letter of Marque.  You must sink one of your Crew to put this card into play.&#xA;React: Tack the Pact when performing a Cannon Attack. This Cannon Attack inflicts 2 extra Hits." />
+		</card>
+	</cards>
+</set>
