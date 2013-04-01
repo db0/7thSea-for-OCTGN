@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
-<game name="7th Sea CCG" id="844ed56c-2048-41a6-97b0-3515185e1634" 
-      octgnVersion="0.10.0.0" version="1.0.1"
+<game name="7th Sea CCG" 
+      id="844ed56c-2048-41a6-97b0-3515185e1634" 
+      octgnVersion="0.10.0.0" 
+      version="1.0.1"
       markersize="16"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Game.xsd">
-
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:noNamespaceSchemaLocation="Game.xsd"
+      tags="pirates rennaisance "
+      description="7th Sea CCG"
+      setsurl="http://octgn.gamersjudgement.com/viewtopic.php?f=9&amp;t=14"
+      gameurl="https://github.com/db0/Doomtown-for-OCTGN"
+      authors="Db0"
+      iconurl="https://raw.github.com/db0/Doomtown-for-OCTGN/master/doomtown_logo.jpg">
   <scripts>
-	<script src="r08" />
+	<script src="Scripts/actions.py" />
   </scripts>  
-
-  <card back="r01" front="r01" width="90" height="126" cornerRadius="6">
+  <card back="Card/cardback.jpg" front="Card/cardback.jpg" width="90" height="126" cornerRadius="6">
 	<property name="Type" type="String" textKind="Enum" />
 	<property name="Cost" type="String" />
 	<property name="Cost Type" type="String" textKind="Enum"/>
@@ -30,7 +36,7 @@
 	<property name="Text" type="String" />
   </card>
 
-  <table name="Table" visibility="undefined" ordered="false" width="1150" height="750" background="r07" backgroundStyle="uniformToFill">
+  <table name="Table" visibility="undefined" ordered="false" width="1150" height="750" background="Background/Theah_background.jpg" backgroundStyle="uniformToFill">
     <cardaction menu="Tack/Untack" execute="tack" default="true" />
     <cardaction menu="Inspect Card" execute="inspectCard" />	
     <groupaction menu="Announce Pass." execute="Pass" shortcut="Ctrl+Space"/>  
@@ -39,7 +45,7 @@
   </table>
 
   <player>
-    <hand name="Hand" visibility="me" ordered="false" width="90" height="126" icon="r05">
+    <hand name="Hand" visibility="me" ordered="false" width="90" height="126" icon="Groups/hand.png">
       <cardaction menu="Play" execute="playcard" default="true"/>	
       <cardaction menu="Inspect Card" execute="inspectCard" />      
       <cardaction menu="Discard card" execute="handDiscard" />		
@@ -47,17 +53,17 @@
       <groupaction menu="Setup starting cards &amp; hand" execute="setup" shortcut="Ctrl+Shift+S"/>	      
     </hand>
 	
-    <group name="Deck" visibility="none" width="90" height="126" icon="r02">
+    <group name="Deck" visibility="none" width="90" height="126" icon="Groups/deck.png">
       <groupaction menu="Draw" default="true" execute="draw" shortcut="Ctrl+D"/>
       <groupaction menu="Draw cards to Play Hand" execute="drawMany" />
       <groupaction menu="Shuffle" execute="shuffle" />
     </group>
 
-    <group name="Discard Pile" visibility="all" width="90" height="126" icon="r06">   
+    <group name="Discard Pile" visibility="all" width="90" height="126" icon="Groups/discard.png">   
        <groupaction menu="Reshuffle into deck" execute="reshuffle" /> 
     </group>
 
-  <group name="Sunk Pile" visibility="all" width="90" height="126" icon="r03">
+  <group name="Sunk Pile" visibility="all" width="90" height="126" icon="Groups/sunkpile.png">
       <cardaction menu="Remove from Play" execute="permRemove"/>	
   </group>
   
@@ -65,8 +71,8 @@
 
   <shared>
      <counter name="Phase" default="0" />  
-     <group name="Common" visibility="all" width="90" height="126" icon="r05"/>
-     <group name="Removed from Play" visibility="all" width="90" height="126" icon="r04"/>
+     <group name="Common" visibility="all" width="90" height="126" icon="Groups/hand.png"/>
+     <group name="Removed from Play" visibility="all" width="90" height="126" icon="Groups/removed.png"/>
   </shared>
   
   <deck>
