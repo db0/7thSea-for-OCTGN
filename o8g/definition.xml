@@ -2,7 +2,7 @@
 <game name="7th Sea" 
       id="844ed56c-2048-41a6-97b0-3515185e1634" 
       octgnVersion="0.10.0.0" 
-      version="1.0.1"
+      version="1.0.1.1"
       markersize="16"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
@@ -44,6 +44,9 @@
     <groupaction menu="Announce Pass." execute="Pass" shortcut="Ctrl+Space"/>  
     <cardaction menu="Sink card(s)" batchExecute="sink" shortcut="Del" />	
     <cardaction menu="Discard card(s)" batchExecute="discard" shortcut="Ctrl+Del" />		
+		<groupactions menu="Game...">
+			<groupaction menu="Download Sets Card Images." shortcut="Ctrl+G" default="False" execute="download_o8c" />
+		</groupactions>
   </table>
 
   <player>

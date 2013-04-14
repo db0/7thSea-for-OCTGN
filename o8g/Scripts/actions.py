@@ -109,7 +109,8 @@ def cheight(card, divisor = 10):
    else: offset = card.height() / divisor
    return (card.height() + offset)
    
-  
+def download_o8c(group,x=0,y=0):
+   openUrl("http://dbzer0.com/pub/7thSea/sets/7thSea-Sets-Bundle.o8c")
 #---------------------------------------------------------------------------
 # Table group actions
 #---------------------------------------------------------------------------
