@@ -8,8 +8,8 @@
       xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
       tags="pirates rennaisance"
       description="In the 7th Sea CCG, players take the role of naval captains in the fantasy-Restoration world of Théah.&#xd;&#xd;&#xd;The game attempts to capture the feeling of a Hollywood pirate battle, complete with huge galleys, cannon-shot exchanges, and daring sea boardings. The game also has aspects of adventuring, treasure seeking, and the occult.&#xd;&#xd;Automation rank: D&#xd;(This game definition contains no automation.)"
-      setsurl="http://http://octgn.gamersjudgement.com/viewtopic.php?f=29&amp;t=24"
-      gameurl="https://github.com/db0/7thSea-for-OCTGN"
+      setsurl="https://github.com/db0/7thSea-for-OCTGN#available-sets"
+      gameurl="https://github.com/db0/7thSea-for-OCTGN#7th-sea-ccg-plugin-for-octgn"
       authors="Db0"
       iconurl="https://raw.github.com/db0/7thSea-for-OCTGN/master/7thSea_logo2.jpg">
   <scripts>
