@@ -2,7 +2,7 @@
 <game name="7th Sea" 
       id="844ed56c-2048-41a6-97b0-3515185e1634" 
       octgnVersion="3.1.0.0" 
-      version="2.0.0.0"
+      version="2.0.0.1"
       markersize="16"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
@@ -20,6 +20,10 @@
   </scripts>  
    <proxygen definitionsrc="Proxy/proxydef.xml">
    </proxygen>   
+  <documents>
+      <document name="Rulebook" icon="Documents/Manual.png" src="Documents/7thSea_ccg_rules.htm" />
+      <document name="FAQ" icon="Documents/Manual.png" src="Documents/7thSeaFAQ.htm" />
+  </documents>    
   <card back="Card/cardback.jpg" front="Card/cardback.jpg" width="90" height="126" cornerRadius="6">
 	<property name="Type" type="String" textKind="Enum" />
 	<property name="Cost" type="String" />
