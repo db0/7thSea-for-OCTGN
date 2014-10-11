@@ -2,7 +2,7 @@
 <game name="7th Sea" 
       id="844ed56c-2048-41a6-97b0-3515185e1634" 
       octgnVersion="3.1.0.0" 
-      version="2.0.0.1"
+      version="2.0.0.2"
       markersize="16"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
@@ -81,18 +81,10 @@
   
   </player>
 
-  <shared>
-     <counter name="Phase" default="0" icon="Counters/phases.png" />  
-     <group name="Common" visibility="all" width="90" height="126" icon="Groups/hand.png"/>
-     <group name="Removed from Play" visibility="all" width="90" height="126" icon="Groups/removed.png"/>
-  </shared>
   
   <deck>
 		<section name="Ship, Captain &amp; Starting Crew" group="Hand" />
 		<section name="Deck" group="Deck" />
   </deck>
   
-  <sharedDeck>
-		<section name="Common" group="Common" />
-  </sharedDeck>
 </game>
