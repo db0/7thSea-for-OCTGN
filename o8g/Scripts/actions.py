@@ -232,8 +232,8 @@ def permRemove(card): # Takes a card from the boot hill and moves it to the shar
    notify("{} has permanently removed {} from play".format(me, card))
    
 def setup(group):
-# This function is usually the first one the player does. It will setup their ship and captain on the top or bottom of the playfield 
-   if shared.Phase == 0: # First check if we're on the pre-setup game phase. 
+# This function is usually the first one the player does. It will setup their ship and captain on the top or bottom of the playfield
+   # if shared.Phase == 0: # First check if we're on the pre-setup game phase.
                          # As this function will play your whole hand and wipe your counters, we don't want any accidents.
       global playerside, playerFaction # Import some necessary variables we're using around the game.
       mute()
@@ -261,9 +261,9 @@ def setup(group):
          elif card.type == "captains" : # If it's a Captain...
             card.moveToTable(shipDistance(card) + cardDistance(card), 0) 
             concat_captain += card.name 
-      drawMany(me.Deck, 7, silent)
-      notify("{} is playing {}. They are sailing the {} with {} as their Captain.".format(me, playerFaction, concat_ship, concat_captain))  
-   else: whisper('You can only setup your starting cards during the Pre-Game setup phase') # If this function was called outside the pre-game setup phase
+      # drawMany(me.Deck, 7, silent)
+      # notify("{} is playing {}. They are sailing the {} with {} as their Captain.".format(me, playerFaction, concat_ship, concat_captain))
+   # else: whisper('You can only setup your starting cards during the Pre-Game setup phase') # If this function was called outside the pre-game setup phase
                                                                                            # We assume a mistake and stop.
                                                                                            
 def shipDistance(card):
