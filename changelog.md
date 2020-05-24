@@ -1,5 +1,10 @@
 Changelog - 7th Sea CCG OCTGN Game Definition
 ===============================================
+### 2.0.2.0
+
+Made compatible with OCTGN 3.4.X
+Added Promo cards to sets.
+Updated README
 
 ### 2.0.0.0
 
@@ -7,7 +12,7 @@ Made compatible with OCTGN 3.1.x
 
 ### 1.0.1
 
-* Small change in the deck's sections. The first section is now called "Ship, Captain & Starting Crew" to better signify what you're supposed to put there. 
+* Small change in the deck's sections. The first section is now called "Ship, Captain & Starting Crew" to better signify what you're supposed to put there.
   The above change means that you'll have to modify your decks. To avoid manually searching your cards to put back ship and captain, simply edit your decks with a text editor and replace `"Ship &amp; Captain"` with `"Ship, Captain &amp; Starting Crew"`
 
 ### 1.0.0

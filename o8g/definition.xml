@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<game name="7th Sea" 
-      id="844ed56c-2048-41a6-97b0-3515185e1634" 
-      octgnVersion="3.1.0.0" 
-      version="2.0.1.0"
+<game name="7th Sea"
+      id="844ed56c-2048-41a6-97b0-3515185e1634"
+      octgnVersion="3.1.0.0"
+      version="2.0.2.0"
       markersize="16"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-      xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
       tags="pirates rennaisance"
       description="In the 7th Sea CCG, players take the role of naval captains in the fantasy-Restoration world of Théah.
       &#xd;&#xd;&#xd;The game attempts to capture the feeling of a Hollywood pirate battle, complete with huge galleys, cannon-shot exchanges, and daring sea boardings. The game also has aspects of adventuring, treasure seeking, and the occult.
@@ -48,44 +48,44 @@
 
   <table name="Table" visibility="undefined" ordered="False" width="1150" height="750" background="Background/Theah_background.jpg" backgroundStyle="uniformToFill">
     <cardaction menu="Tack/Untack" execute="tack" default="True" />
-    <cardaction menu="Inspect Card" execute="inspectCard" />	
-    <groupaction menu="Announce Pass." execute="Pass" shortcut="Ctrl+Space"/>  
-    <cardaction menu="Sink card(s)" batchExecute="sink" shortcut="Del" />	
-    <cardaction menu="Discard card(s)" batchExecute="discard" shortcut="Ctrl+Del" />		
+    <cardaction menu="Inspect Card" execute="inspectCard" />
+    <groupaction menu="Announce Pass." execute="Pass" shortcut="Ctrl+Space"/>
+    <cardaction menu="Sink card(s)" batchExecute="sink" shortcut="Del" />
+    <cardaction menu="Discard card(s)" batchExecute="discard" shortcut="Ctrl+Del" />
 		<groupactions menu="Game...">
 			<groupaction menu="Download Sets Card Images." shortcut="Ctrl+G" default="False" execute="download_o8c" />
 		</groupactions>
   </table>
 
   <player>
-    <hand name="Hand" visibility="me" ordered="False" width="90" height="126" icon="Groups/hand.png">
-      <cardaction menu="Play" execute="playcard" default="True"/>	
-      <cardaction menu="Inspect Card" execute="inspectCard" />      
-      <cardaction menu="Discard card" execute="handDiscard" />		
+    <group name="Hand" visibility="me" ordered="False" icon="Groups/hand.png">
+      <cardaction menu="Play" execute="playcard" default="True"/>
+      <cardaction menu="Inspect Card" execute="inspectCard" />
+      <cardaction menu="Discard card" execute="handDiscard" />
       <groupaction menu="Random Discard" shortcut="Ctrl+Alt+D" execute="randomDiscard" />
-      <groupaction menu="Setup starting cards &amp; hand" execute="setup" shortcut="Ctrl+Shift+S"/>	      
-    </hand>
-	
-    <group name="Deck" visibility="none" width="90" height="126" icon="Groups/deck.png">
+      <groupaction menu="Setup starting cards &amp; hand" execute="setup" shortcut="Ctrl+Shift+S"/>
+    </group>
+
+    <group name="Deck" visibility="none" icon="Groups/deck.png">
       <groupaction menu="Draw" default="True" execute="draw" shortcut="Ctrl+D"/>
       <groupaction menu="Draw cards to Play Hand" execute="drawMany" />
       <groupaction menu="Shuffle" execute="shuffle" />
     </group>
 
-    <group name="Discard Pile" visibility="all" width="90" height="126" icon="Groups/discard.png">   
-       <groupaction menu="Reshuffle into deck" execute="reshuffle" /> 
+    <group name="Discard Pile" visibility="all" icon="Groups/discard.png">
+       <groupaction menu="Reshuffle into deck" execute="reshuffle" />
     </group>
 
-  <group name="Sunk Pile" visibility="all" width="90" height="126" icon="Groups/sunkpile.png">
-      <cardaction menu="Remove from Play" execute="permRemove"/>	
+  <group name="Sunk Pile" visibility="all" icon="Groups/sunkpile.png">
+      <cardaction menu="Remove from Play" execute="permRemove"/>
   </group>
-  
+
   </player>
 
-  
+
   <deck>
 		<section name="Ship, Captain &amp; Starting Crew" group="Hand" />
 		<section name="Deck" group="Deck" />
   </deck>
-  
+
 </game>
